@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DSA Toolkit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔍 DSA Toolkit</h1>
+
+    <div class="controls">
+      <label>Algorithm:</label>
+      <select id="algorithm">
+        <option value="bubble">Bubble Sort</option>
+        <option value="selection">Selection Sort</option>
+        <option value="insertion">Insertion Sort</option>
+        <option value="merge">Merge Sort</option>
+        <option value="quick">Quick Sort</option>
+      </select>
+
+      <input type="text" id="arrayInput" value="64,34,25,12,22,11,90" />
+      <button onclick="generateRandom()">Random</button>
+      <button onclick="startSorting()">Start</button>
+    </div>
+
+    <div class="info">
+      <p><strong>Algorithm:</strong> <span id="algoName">Bubble Sort</span></p>
+      <p><strong>Time:</strong> <span id="timeComp">O(n²)</span>, 
+         <strong>Space:</strong> <span id="spaceComp">O(1)</span></p>
+    </div>
+
+    <div class="bars" id="barsContainer"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
